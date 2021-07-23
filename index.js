@@ -10,6 +10,6 @@ app.use(bodyParser.json())
 
 app.use(router)
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`App is running at ${PORT}`)
 })
